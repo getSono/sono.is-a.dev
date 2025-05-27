@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wildcard E-Mail reserviert</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2f2f2f, #1a1a1a);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      background-color: #333;
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      animation: fadeIn 1.2s ease-out 0.3s forwards;
+      opacity: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 0;
+      color: #bbb;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out 0.5s forwards;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out 0.7s forwards;
+    }
+
+    .footer strong {
+      color: #fff;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Reservierte Wildcard E-Mail</h1>
+    <p>Diese Adresse ist bereits einem Dienst zugewiesen.</p>
+    <div class="footer">
+      Ein Service von <strong>VeloNet</strong>
+    </div>
+  </div>
+</body>
+</html>
